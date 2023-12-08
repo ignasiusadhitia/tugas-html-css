@@ -1,8 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
 
+:root {
+  --brand-color: #f5f0ff;
+  --bg-midnight-blue: #343449;
+  --bg-deep-purple: #4a437d;
+  --bg-royal-blue: #5f4ccb;
+  --bg-sky-blue: #3c8cff;
+  --bg-lavender: #c0a5f2;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Rubik, sans-serif;
+  color: var(--brand-color);
+}
+
+@keyframes bg-animation {
+  0% {
+    background-color: var(--bg-midnight-blue);
+  }
+  12.5% {
+    background-color: var(--bg-deep-purple);
+  }
+  25% {
+    background-color: var(--bg-royal-blue);
+  }
+  37.5% {
+    background-color: var(--bg-sky-blue);
+  }
+  50% {
+    background-color: var(--bg-lavender);
+  }
+  62.5% {
+    background-color: var(--bg-sky-blue);
+  }
+  75% {
+    background-color: var(--bg-deep-purple);
+  }
+  87.5% {
+    background-color: var(--bg-royal-blue);
+  }
+  100% {
+    background-color: var(--bg-midnight-blue);
+  }
+}
+
+body {
+  animation: bg-animation 60s ease-in-out 2s infinite;
 }
