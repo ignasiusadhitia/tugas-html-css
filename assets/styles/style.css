@@ -85,8 +85,15 @@ ul {
 
 li {
   list-style: none;
-  text-decoration: none;
   font-weight: var(--text-regular);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 2px solid var(--brand-color);
 }
 
 footer nav {
