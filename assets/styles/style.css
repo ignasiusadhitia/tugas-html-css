@@ -8,6 +8,7 @@
   --bg-royal-blue: #5f4ccb;
   --bg-sky-blue: #3c8cff;
   --bg-lavender: #c0a5f2;
+  --bg-transparent: transparent;
 
   --text-bold: 700;
   --text-medium: 500;
@@ -60,6 +61,12 @@ body {
   animation: bg-animation 60s ease-in-out 2s infinite;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 h1 {
   font-size: 20vh;
   font-weight: var(--text-bold);
@@ -75,7 +82,11 @@ p {
 }
 
 button {
+  padding: 2vh 4vh;
+  border: 4px solid var(--brand-color);
+  font-size: 3vh;
   font-weight: var(--text-bold);
+  background-color: var(--bg-transparent);
 }
 
 ul {
@@ -103,7 +114,7 @@ footer nav {
 }
 
 .container {
-  padding: 20px 10vw;
+  padding: 1rem 10vw;
 }
 
 @media only screen and (max-width: 768px) {
@@ -117,6 +128,11 @@ footer nav {
 
   p {
     font-size: 4vw;
+  }
+
+  button {
+    width: 100%;
+    font-size: 3vw;
   }
 
   ul {
