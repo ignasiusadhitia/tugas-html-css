@@ -109,6 +109,7 @@ li {
 
 a {
   text-decoration: none;
+  transition: all 0.1s ease;
 }
 
 a:hover {
