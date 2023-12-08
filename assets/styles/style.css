@@ -103,5 +103,33 @@ footer nav {
 }
 
 .container {
-  padding: 20px 150px;
+  padding: 20px 10vw;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 18vw;
+  }
+
+  span {
+    text-align: center;
+  }
+
+  p {
+    font-size: 4vw;
+  }
+
+  ul {
+    justify-content: center;
+  }
+
+  footer nav {
+    flex-direction: column-reverse;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  .container {
+    padding: 20px 5vw;
+  }
 }
