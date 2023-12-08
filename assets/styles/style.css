@@ -74,10 +74,21 @@ button {
   font-weight: var(--text-bold);
 }
 
+ul {
+  display: flex;
+  gap: 12px;
+}
+
 li {
   list-style: none;
   text-decoration: none;
   font-weight: var(--text-regular);
+}
+
+footer nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .container {
