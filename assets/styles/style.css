@@ -50,3 +50,7 @@
 body {
   animation: bg-animation 60s ease-in-out 2s infinite;
 }
+
+.container {
+  padding: 20px 150px;
+}
