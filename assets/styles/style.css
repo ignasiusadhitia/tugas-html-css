@@ -2,11 +2,16 @@
 
 :root {
   --brand-color: #f5f0ff;
+
   --bg-midnight-blue: #343449;
   --bg-deep-purple: #4a437d;
   --bg-royal-blue: #5f4ccb;
   --bg-sky-blue: #3c8cff;
   --bg-lavender: #c0a5f2;
+
+  --text-bold: 700;
+  --text-medium: 500;
+  --text-regular: 400;
 }
 
 * {
@@ -49,6 +54,30 @@
 
 body {
   animation: bg-animation 60s ease-in-out 2s infinite;
+}
+
+h1 {
+  font-size: 20vh;
+  font-weight: var(--text-bold);
+}
+
+span {
+  font-weight: var(--text-regular);
+}
+
+p {
+  font-size: 5vh;
+  font-weight: var(--text-medium);
+}
+
+button {
+  font-weight: var(--text-bold);
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+  font-weight: var(--text-regular);
 }
 
 .container {
